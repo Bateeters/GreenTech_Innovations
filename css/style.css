@@ -19,6 +19,15 @@ body{
     flex-direction: column;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: silver;
+}
+
 header{
     position: absolute;
     display: block;
@@ -37,18 +46,18 @@ nav{
     flex-direction: row;
     margin-left: auto;
     margin-right: auto;
-    padding: 15px ;
+    padding: 30px 15px;
 }
 
 #logo{
     margin: auto;
     font-weight: 700;
-    font-size: 1.35em;
+    font-size: 1.55em;
 }
 
 #collapse{
     margin: auto;
-    font-size: 1em;
+    font-size: 1.25em;
 }
 
 #search{
@@ -57,20 +66,92 @@ nav{
 
 section{
     /* adjust/remove after info is added */
-    height: 100vh; 
+    display: flex;
 }
 
-#heroImg{
+#hero{
     background-color: var(--primary);
     background-image: url(/assets/images/main_background.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 170px;
+    height: 100vh;
+    gap: 50px;
+}
+
+#heroTxt{
+    flex: auto;
+    background-color: blue;
+    width: 100%;
+    margin-left: auto;
+}
+
+#heroTxt>h1{
+    font-size: 2.5em;
+}
+#heroTxt>p{
+    font-size: 1.5em;
+}
+#heroTxt>button{
+    font-size: 1.5em;
+}
+
+#heroImg{
+    flex: auto;
+    background-color: red;
+    width: 60%;
+    margin-right: auto;
+}
+
+.sectionHead{
+    background-color: var(--accent);
+    margin: 0 auto;
+    font-size: 1.5em;
 }
 
 #about{
     color: var(--dark);
     background-color: white;
+    padding: 100px;
+    gap: 50px;
+}
+
+#aboutImgs{
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#top{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+}
+#img1, #img2{
+    width: 50%;
+    background: green;
+}
+
+#bot{
+    width: 100%;
+}
+
+#img3{
+    background-color: purple;
+}
+
+#aboutTxt{
+    flex: auto;
+    width: 40%;
 }
 
 #services{
