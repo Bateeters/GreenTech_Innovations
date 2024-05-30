@@ -60,8 +60,17 @@ nav{
     font-size: 1.25em;
 }
 
+#collapse>ul{
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    gap: 50px;
+
+}
+
 #search{
     margin: auto;
+    width: 2%;
 }
 
 section{
@@ -86,8 +95,7 @@ section{
 
 #heroTxt{
     flex: auto;
-    background-color: blue;
-    width: 100%;
+    width: 70%;
     margin-left: auto;
 }
 
@@ -96,15 +104,25 @@ section{
 }
 #heroTxt>p{
     font-size: 1.5em;
+    font-weight: 500;
+    line-height: 1.65em;
 }
 #heroTxt>button{
+    border-radius: 10px;
     font-size: 1.5em;
+    background-color: var(--secondary);
+    color: white;
+    border: 2px solid white;
+    padding: 8px 15px;
+}
+
+#heroTxt>button:active{
+    background-color: #086292;
 }
 
 #heroImg{
     flex: auto;
-    background-color: red;
-    width: 60%;
+    width: 100%;
     margin-right: auto;
 }
 
@@ -124,29 +142,20 @@ section{
 #aboutImgs{
     display: flex;
     flex: auto;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
 
-#top{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    width: 100%;
-}
 #img1, #img2{
-    width: 50%;
+    width: 45%;
     background: green;
-}
-
-#bot{
-    width: 100%;
 }
 
 #img3{
     background-color: purple;
+    width: 80%;
 }
 
 #aboutTxt{
