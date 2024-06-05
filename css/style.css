@@ -23,6 +23,19 @@ a:hover{
     color: silver;
 }
 
+button{
+    border-radius: 10px;
+    font-size: 1.5em;
+    background-color: var(--secondary);
+    color: white;
+    border: 2px solid white;
+    padding: 8px 15px;
+}
+
+button:active{
+    background-color: #086292;
+}
+
 header{
     position: absolute;
     display: block;
@@ -104,19 +117,6 @@ section{
     line-height: 1.65em;
 }
 
-#heroTxt>button{
-    border-radius: 10px;
-    font-size: 1.5em;
-    background-color: var(--secondary);
-    color: white;
-    border: 2px solid white;
-    padding: 8px 15px;
-}
-
-#heroTxt>button:active{
-    background-color: #086292;
-}
-
 #heroImg{
     flex: auto;
     margin-right: auto;
@@ -157,25 +157,13 @@ section{
     line-height: 1.65em;
 }
 
-#aboutTxt>button{
-    border-radius: 10px;
-    font-size: 1.5em;
-    background-color: var(--secondary);
-    color: white;
-    border: 2px solid white;
-    padding: 8px 15px;
-}
-
-#aboutTxt>button:active{
-    background-color: #086292;
-}
-
 #services{
     background-color: var(--primary);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 50px;
 }
 
 #serviceGrid{
@@ -185,22 +173,81 @@ section{
     flex-direction: row;
     justify-content: center;
     gap: 50px;
-    background-color: aqua;
     width: 70%;
     margin: auto;
 }
 
 .serviceCard{
-    background-color: black;
+    background-image: linear-gradient(125deg, rgb(113, 113, 113), rgb(214, 213, 213), whitesmoke, white);
+    border: 2px solid #2f2f2f;
+    border-radius: 10px;
     width: 400px;
-    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 15px;
+    color: #2f2f2f;
+}
+
+.serviceIcon{
+    flex: auto;
+    min-width: 75px;
+}
+
+.serviceTxt{
+    flex: auto;
+    min-width: 100px;
+}
+
+.ctaTxt{
+    text-align: center;
+    padding-top: 30px;
 }
 
 #testimonials{
     color: var(--dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 footer{
     background-color: var(--dark);
 }
 
+.testimonialContainer{
+    background-color: greenyellow;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 100vw;
+}
+
+#backward, #forward{
+    width: 70px;
+    height: 70px;
+    margin: auto;
+}
+
+
+.review {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 700px;
+}
+  
+#name {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+}
+
+  
+#testimonial {
+    font-family: "Open Sans", sans-serif;
+    padding: 2rem;
+}

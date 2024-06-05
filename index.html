@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GreenTech Innovations</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/c9d2b38a42.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -67,22 +68,61 @@
                 <h2>Innovative Technologies for a Greener Future</h2>
             </div>
             <div id="serviceGrid">
-                <div class="serviceCard">Service</div>
-                <div class="serviceCard">Service</div>
-                <div class="serviceCard">Service</div>
-                <div class="serviceCard">Service</div>
+                <div class="serviceCard">
+                    <div class="serviceIcon">
+                        <img src="./assets/images/renwable_energy_icon.png" alt="Rewewable Energy Icon" width="85px"></img>
+                    </div>
+                    <div class="serviceTxt">
+                        <h3>Renewable Energy Solutions:</h3>
+                        <p>Harness the power of solar, wind, and other renewable sources to reduce your carbon footprint.</p>
+                    </div>
+                </div>
+                <div class="serviceCard">
+                    <div class="serviceIcon">
+                        <img src="./assets/images/audit_icon.png" alt="Energy Efficient Audits Icon" width="85px"></img>
+                    </div>
+                    <div class="serviceTxt">
+                        <h3>Energy Efficiency Audits:</h3>
+                        <p>Identify and implement measures to improve energy efficiency and reduce costs.</p>
+                    </div>
+                </div>
+                <div class="serviceCard">
+                    <div class="serviceIcon">
+                        <img src="./assets/images/consulting_icon.png" alt="Sustainability Consulting Icon" width="90px"></img>
+                    </div>
+                    <div class="serviceTxt">
+                        <h3>Sustainability Consulting:</h3>
+                        <p>Develop and execute strategies that align with your sustainability goals.</p>
+                    </div>
+                </div>
+                <div class="serviceCard">
+                    <div class="serviceIcon">
+                        <img src="./assets/images/impact_icon.png" alt="Environmental Impact Assessment Icon" width="80px"></img>
+                    </div>
+                    <div class="serviceTxt">
+                        <h3>Environmental Impact Assessments:</h3>
+                        <p>Assess and mitigate the environmental impact of your projects.</p>
+                    </div>
+                </div>
             </div>
-            
+            <h2 class="ctaTxt">Discover how our services can benefit your business and the environment.</h2>
+            <button>Contact us today!</button>
         </section>
         <section id="testimonials">            
             <div class="sectionHead">
                 <h2>Client Testimonials</h2>
             </div>
-            <div>
-                Card Scrolls
+            <div class="testimonialContainer">
+                <button id='backward' disabled><i class="fa-solid fa-chevron-left"></i></button>
+                <section class="review">
+                    <div id='testimonial'></div>
+                    <div id='author'></div>
+                </section>
+                <button id='forward'><i class="fa-solid fa-chevron-right"></i></button>
             </div>
         </section>
     </main>
     <footer>Footer</footer>
+    <script src="./js/script.js"></script>
 </body>
 </html>
