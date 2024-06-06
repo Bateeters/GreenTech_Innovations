@@ -116,14 +116,9 @@ nav{
     width: 2%;
 }
 
-section{
-    /* adjust/remove after info is added */
-    display: flex;
-}
-
 #hero{
     background-color: var(--primary);
-    background-image: linear-gradient(0deg, #0000004d, #000000b8), url(/assets/images/main_background.png);
+    background-image: linear-gradient(0deg, #0000004d, #000000b8), url(./assets/images/main_background.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -246,7 +241,7 @@ section{
 }
 
 #testimonials{
-    background: url(/assets/images/energy_background_pattern.png);
+    background: url(./assets/images/energy_background_pattern.png);
     background-repeat: no-repeat;
     background-size: cover;
     color: var(--dark);
