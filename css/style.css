@@ -218,7 +218,7 @@ section{
 
 .serviceCard{
     background-color: whitesmoke;
-    border: 2px solid #2f2f2f;
+    border: 2px solid var(--dark);
     border-radius: 10px;
     width: 400px;
     display: flex;
@@ -274,7 +274,7 @@ section{
 
 .review {
     background: linear-gradient(135deg, white, whitesmoke);
-    border: 3px solid var(--secondary);
+    border: 3px solid var(--dark);
     border-radius: 20px;
     display: flex;
     justify-content: space-around;
@@ -318,6 +318,7 @@ footer{
 
 #footContent{
     flex: auto;
+    flex-wrap: wrap;
     display: flex;
     flex-direction: row;
     margin: auto;
@@ -327,7 +328,9 @@ footer{
 }
 
 .footInfo{
-    width: 30%;
+    min-width: 250px;
+    width: 300px;
+    flex: auto;
 }
 
 .footName{
@@ -340,16 +343,22 @@ footer{
 }
 
 .footLinks{
+    flex: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 250px;
+    min-width: 250px;
+
 }
 
 .footContact{
-    margin-left: auto;
+    flex: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    min-width: 250px;
 }
 
 .copyright{
@@ -358,4 +367,5 @@ footer{
     justify-content: center;
     align-items: center;
     padding: 15px;
+    text-align: center;
 }
