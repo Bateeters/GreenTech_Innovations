@@ -84,11 +84,30 @@ nav{
     box-shadow: 0px 7px 17px rgba(0, 0, 0, 0.35);
 }
 
-#navContainerB>div>a, #navContainerB>div>ul>a{
+#navContainerC{
+    background-color: whitesmoke;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 15px;
+    box-shadow: 0px 7px 17px rgba(0, 0, 0, 0.35);
+}
+
+#navContainerB>div>a, 
+#navContainerB>div>ul>a,
+#navContainerC>div>a,
+#navContainerC>div>ul>a{
     color: var(--dark);
 }
 
-#navContainerB>div>a:hover, #navContainerB>div>ul>a:hover{
+#navContainerB>div>a:hover, 
+#navContainerB>div>ul>a:hover,
+#navContainerC>div>a:hover,
+#navContainerC>div>ul>a:hover{
     color: silver;
 }
 
@@ -166,6 +185,7 @@ nav{
     color: var(--dark);
     background-color: white;
     padding: 100px;
+    display: flex;
     flex-wrap: wrap;
 }
 
