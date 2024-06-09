@@ -404,6 +404,7 @@ footer{
     margin-top: 70px;
     background-image: url(../assets/images/energy_background_pattern.png);
     background-repeat: none;
+    background-size: cover;
 }
 
 #contact>.sectionHead{
