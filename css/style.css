@@ -402,6 +402,8 @@ footer{
     justify-content: center;
     align-items: center;
     margin-top: 70px;
+    background-image: url(../assets/images/energy_background_pattern.png);
+    background-repeat: none;
 }
 
 #contact>.sectionHead{
