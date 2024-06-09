@@ -31,6 +31,7 @@ button{
     color: white;
     border: 2px solid white;
     padding: 8px 15px;
+    cursor: pointer;
 }
 
 button:hover{
@@ -202,8 +203,8 @@ nav{
     width: 40%;
 }
 
-#aboutTxt>h1{
-    font-size: 2.5em;
+#aboutTxt>.sectionHead>h1{
+    text-align: start;
 }
 
 .sectionTxt>p{
@@ -397,17 +398,31 @@ footer{
     background-color: white;
     padding: 100px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 70px;
+}
 
+#contact>.sectionHead{
+    text-align: start;
+    width: 70%;
 }
 
 .contactHead{
     margin-top: 70px;
 }
 
+.formContainer{
+    flex: auto;
+    display: flex;
+    width: 70%;
+    justify-content: start;
+    align-items: center;
+}
+
 form {
-    width: 700px;
+    width: 100%;
     padding: 20px;
     background-color: #f9f9f9;
     border: 1px solid #ccc;
@@ -429,17 +444,4 @@ input, textarea {
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
-}
-
-input[type="submit"] {
-    background-color: #4CAF50;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-input[type="submit"]:hover {
-    background-color: #3e8e41;
 }
