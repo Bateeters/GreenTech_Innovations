@@ -41,10 +41,26 @@
         </nav>
     </header>
     <main>
-        <section id="about">
+        <section id="contact">
             <div>
+                <h1 class="contactHead">Contact Us</h1>
                 <form action="">
-                    <h1>Contact form for Name, Email, Phone Number, Comment/Question, Submit Button</h1>
+                    <label for="first-name">*First Name:</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                    
+                    <label for="last-name">*Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                    
+                    <label for="email">*Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" >
+                    
+                    <label for="comment">Comment:</label>
+                    <textarea id="comment" name="comment" rows="10"></textarea>
+                    
+                    <input type="submit" value="Send Message">
                 </form>
             </div>
         </section>
