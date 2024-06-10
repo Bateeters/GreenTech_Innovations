@@ -42,7 +42,7 @@
     </header>
     <main>
         <section id="contact">
-            <div class="sectionHead">
+            <div class="sectionHead" id="formHeader">
                 <h1>Contact Us</h1>
             </div>
             <div class="formContainer">
@@ -62,8 +62,12 @@
                     <label for="comment">Comment:</label>
                     <textarea id="comment" name="comment" rows="10"></textarea>
                     
-                    <button type="submit">Send Message</button>
+                    <button type="submit" id="formSubmitBtn">Send Request</button>
                 </form>
+            </div>
+            <div class="formCompleteCard hide">
+                <h1 class="formCompleteTxt">Thank you Brian for submitting a contact request.<br><br>One of our representatives will be reaching out to you shortly at: @email.com</h1>
+                <button class="formCompleteBtn" type="button">Send New Request</button>
             </div>
         </section>
     </main>
@@ -130,5 +134,6 @@
 
     </footer>
     <script src="../js/stickyNav.js"></script>
+    <script src="../js/contact.js"></script>
 </body>
 </html>
