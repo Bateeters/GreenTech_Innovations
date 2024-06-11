@@ -12,16 +12,21 @@ const formContainer = document.querySelector(".formContainer");
 
 // Form Complete Message Elements
 const formCompleteCard = document.querySelector(".formCompleteCard");
-const formCompleteText = document.querySelector(".formCompleteTxt");
 const formCompleteBtn = document.querySelector(".formCompleteBtn");
+const formCompleteTxt = document.createElement("h1");
 
 
 submitBtn.addEventListener("click", ()=>{
     if(formFirstName.value!="" && formLastName.value!="" && formEmail.value!=""){
         event.preventDefault();
-        formCompleteCard.classList.remove("hide");
         formContainer.setAttribute("style", "display:none");
         formHeader.classList.add("hide");
+
+
+        formCompleteTxt.textContent=`Thank you ${formFirstName.value} for submitting a contact request.
+        One of our representatives will be reaching out to you shortly at: ${formEmail.value}`;
+        formCompleteCard.prepend(formCompleteTxt);
+        formCompleteCard.classList.remove("hide");
     }
 });
 
@@ -34,6 +39,7 @@ formCompleteBtn.addEventListener("click", ()=>{
     formMsg.value = '';
 
     // revert the form to show again.
+    formCompleteCard.removeChild(formCompleteTxt);
     formCompleteCard.classList.add("hide");
     formContainer.setAttribute("style", "display:flex");
     formHeader.classList.remove("hide");
