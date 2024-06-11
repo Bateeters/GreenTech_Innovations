@@ -406,9 +406,14 @@ footer{
     background-size: cover;
 }
 
-#contact>.sectionHead{
-    text-align: start;
-    width: 70%;
+#formHeader{
+    background-color: var(--primary);
+    color: whitesmoke;
+    width: 50%;
+    font-size: 1.5em;
+    text-align: center;
+    z-index: 1;
+    margin-top: 40px;
 }
 
 .contactHead{
@@ -419,32 +424,53 @@ footer{
     flex: auto;
     display: flex;
     width: 70%;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
+    margin-top: -30px;
 }
 
 form {
     width: 100%;
-    padding: 20px;
+    padding: 50px 50px 30px 50px;
     background-color: #f9f9f9;
     border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    margin: auto;
+}
+
+.nameForm{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+}
+
+#first, #last{
+    width: 45%;
+    padding: 10px 0;
+}
+
+.emailForm,
+.phoneForm,
+.commentForm{
+    width: 100%;
 }
 
 label {
     margin-right: auto;
     display: block;
     margin-bottom: 10px;
-    padding-left: 25px;
 }
 
 input, textarea {
-    width: 90%;
-    padding: 10px;
+    width: 100%;
+    padding: 10px 0 10px 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
 }
@@ -458,5 +484,4 @@ input, textarea {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
     text-align: center;
-
 }

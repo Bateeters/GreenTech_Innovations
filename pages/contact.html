@@ -42,25 +42,37 @@
     </header>
     <main>
         <section id="contact">
-            <div class="sectionHead" id="formHeader">
+            <div id="formHeader">
                 <h1>Contact Us</h1>
             </div>
             <div class="formContainer">
-                <form action="">
-                    <label for="first-name">*First Name:</label>
-                    <input type="text" id="first-name" name="first-name" required>
-                    
-                    <label for="last-name">*Last Name:</label>
-                    <input type="text" id="last-name" name="last-name" required>
-                    
-                    <label for="email">*Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    
-                    <label for="phone">Phone Number:</label>
-                    <input type="tel" id="phone" name="phone" >
-                    
-                    <label for="comment">Comment:</label>
-                    <textarea id="comment" name="comment" rows="10"></textarea>
+                <form>
+                    <div class="nameForm">
+                        <div id="first">
+                            <label for="first-name">*First Name:</label>
+                            <input type="text" id="first-name" name="first-name" required>
+                        </div>
+                        <div id="last">
+                            <label for="last-name">*Last Name:</label>
+                            <input type="text" id="last-name" name="last-name" required>
+                        </div>
+                    </div>
+  
+                    <div class="emailForm">
+                        <label for="email">*Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="phoneForm">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" >
+                    </div>
+
+                    <div class="commentForm">
+                        <label for="comment">Comment:</label>
+                        <textarea id="comment" name="comment" rows="6"></textarea>
+                    </div>
+
                     
                     <button type="submit" id="formSubmitBtn">Send Request</button>
                 </form>

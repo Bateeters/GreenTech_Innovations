@@ -25,3 +25,16 @@ submitBtn.addEventListener("click", ()=>{
     }
 });
 
+formCompleteBtn.addEventListener("click", ()=>{
+    // clear all fields
+    formFirstName.value = '';
+    formLastName.value = '';
+    formEmail.value = '';
+    formPhone.value = '';
+    formMsg.value = '';
+
+    // revert the form to show again.
+    formCompleteCard.classList.add("hide");
+    formContainer.setAttribute("style", "display:flex");
+    formHeader.classList.remove("hide");
+})
