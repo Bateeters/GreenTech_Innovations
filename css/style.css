@@ -69,6 +69,7 @@ nav{
 
 .sticky{
     display: block;
+    z-index: 200;
 }
 
 #navContainerB{
@@ -83,6 +84,8 @@ nav{
     margin-right: auto;
     padding: 30px 15px;
     box-shadow: 0px 7px 17px rgba(0, 0, 0, 0.35);
+    z-index: 2;
+
 }
 
 #navContainerC{
