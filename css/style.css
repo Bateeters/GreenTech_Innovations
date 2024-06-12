@@ -215,7 +215,7 @@ nav{
     padding: 100px;
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    justify-content: center;
 }
 
 #aboutContent{
@@ -522,7 +522,7 @@ input, textarea {
     text-align: center;
 }
 
-@media only screen and (min-width: 481px) and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     #navToggle{
         margin-left: auto;
         display: block;
@@ -582,6 +582,8 @@ input, textarea {
     }
 }
 
-@media only screen and (max-width: 480px) {
-
+@media only screen and (max-width: 481px){
+    .footContact{
+        flex-direction: column;
+    }
 }
