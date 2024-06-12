@@ -94,3 +94,11 @@ showTestimonial();
 setTimeout(() => {
   setInterval(nextTestimonial, 6000);
 }, 6000);
+
+const navToggle = document.getElementById('navToggle');
+const collapse = document.getElementById('collapse');
+
+navToggle.addEventListener('click', () => {
+  navToggle.classList.toggle('active');
+  collapse.classList.toggle('active');
+});

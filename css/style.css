@@ -63,6 +63,16 @@ nav{
     padding: 30px 15px;
 }
 
+#navToggle{
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+#navToggle:hover{
+    color: silver;
+}
+
 .hide{
     display: none;
 }
@@ -205,13 +215,21 @@ nav{
     padding: 100px;
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+}
+
+#aboutContent{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 7.5%;
 }
 
 #aboutImg{
     flex: auto;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 35%;
     margin: auto;
 }
 
@@ -221,7 +239,7 @@ nav{
 
 #aboutTxt{
     flex: auto;
-    width: 40%;
+    width: 45%;
 }
 
 #aboutTxt>.sectionHead>h1{
@@ -505,8 +523,44 @@ input, textarea {
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
+    #navToggle{
+        margin-left: auto;
+        display: block;
+    }
+
+    #navToggle.active {
+        background-color: var(--accent);
+      }
+
+    #navToggle.active + #collapse {
+        display: block;
+    }
+
+    #collapse{
+        display: none;
+    }
+
     #heroImg{
         display: none;
+    }
+
+    #aboutContent{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #aboutImg{
+        width: 100%;
+        display: flex;
+    }
+
+    #aboutImg>img{
+        width: 60%;
+    }
+
+    #aboutTxt{
+        width: 100%;
     }
 
     #footContent{
