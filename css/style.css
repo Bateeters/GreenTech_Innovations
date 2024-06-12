@@ -322,6 +322,7 @@ nav{
     gap: 30px;
     width: 80%;
     margin: 0 auto 30px;
+    min-height: 200px;
 }
 
 #backward, #forward{
@@ -340,7 +341,6 @@ nav{
     align-items: center;
     flex-direction: column;
     width: 600px;
-    height: 250px;
     box-shadow: 0 7px 20px rgba(0, 0, 0, 0.35);
 }
   
@@ -523,6 +523,7 @@ input, textarea {
 }
 
 @media only screen and (max-width: 768px) {
+
     #navToggle{
         margin-left: auto;
         display: block;
@@ -583,7 +584,48 @@ input, textarea {
 }
 
 @media only screen and (max-width: 481px){
+
+    #hero{
+        padding-bottom: 50px;
+    }
+
+    #about{
+        padding: 20px;
+    }
+
+    #testimonials{
+        width: 100%;
+    }
+
+    .testimonialContainer{
+        width: 90%;
+    }
+
+    #testimonial {
+        font-size: 1em;
+        font-weight: 500;
+        padding: 30px 30px 0;
+    }
+
+    #author {
+        font-size: 1em;
+    }
+
+    #footContent{
+        gap: 5px;
+    }
+
+    .footInfo{
+    }
+
+    .footLinks{
+        margin-left: 0;
+        padding-right: 5px;
+        border-right: 2px solid var(--accent);
+    }
+
     .footContact{
+        padding-left: 15px;
         flex-direction: column;
     }
 }
