@@ -67,6 +67,7 @@ nav{
     background: none;
     border: none;
     box-shadow: none;
+    display: none;
 }
 
 #navToggle:hover{
