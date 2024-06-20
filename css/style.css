@@ -716,4 +716,26 @@ input, textarea {
         padding-left: 15px;
         flex-direction: column;
     }
+
+    #contact{
+        color: var(--dark);
+        background-color: white;
+        padding: 100px 40px;
+    }
+
+    #formHeader{
+        width: 70%;
+    }
+
+    #first, #last{
+        width: 100%;
+    }
+
+    input{
+        width: 95%;
+    }
+
+    .formCompleteCard{
+        font-size: .85em;
+    }
 }
