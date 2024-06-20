@@ -1,5 +1,5 @@
 // Sticky nav bar JS
-const stickyNav = document.querySelector('.hide');
+const stickyNav = document.querySelector('.stickyNav');
 const scrollPoint = 200;
 
 // Event listener for window scroll event
