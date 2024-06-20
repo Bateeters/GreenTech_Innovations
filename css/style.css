@@ -523,16 +523,80 @@ input, textarea {
     text-align: center;
 }
 
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 5%;
+    left: 69%;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+.sidenav a {
+    padding: 18px 10px 18px 30px;
+    text-decoration: none;
+    font-size: 25px;
+    color: whitesmoke;
+    display: block;
+    transition: 0.3s;
+    background-color: var(--dark);
+    width: 150px;
+    border-bottom: 1px solid var(--accent);
+}
+
+.sidenav a:hover {
+    color: var(--accent);
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.toggle-btn {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.toggle-btn:hover {
+    background-color: #3e8e41;
+}
+
+.open{
+    overflow-x: visible;
+}
+
+
 @media only screen and (max-width: 768px) {
+
+    #navContainerB>#navToggle{
+        color: var(--dark);
+    }
+
+    #navContainerC>#navToggle{
+        color: var(--dark);
+    }
 
     #navToggle{
         margin-left: auto;
         display: block;
     }
-
-    #navToggle.active {
-        background-color: var(--accent);
-      }
 
     #navToggle.active + #collapse {
         display: block;

@@ -11,3 +11,11 @@ window.addEventListener("scroll", ()=>{
         stickyNav.classList.remove("sticky");
     }
 });
+
+// Side Nav JS
+function toggleSidenav() {
+    document.querySelector(".sidenav").classList.toggle("open");
+  }
+  
+  // Add event listener to close button
+  document.querySelector(".closebtn").addEventListener("click", toggleSidenav);

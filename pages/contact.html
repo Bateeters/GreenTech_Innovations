@@ -11,13 +11,19 @@
     <header>
         <nav>
             <div id="navContainerC">
-                <div id="logo"><a href="../index.html">GreenTech Innovations</a></div>
+                <div id="logo"><a href="/index.html">GreenTech Innovations</a></div>
                 <div id="collapse">
                     <ul>
-                        <a href=""><li>About Us</li></a>
-                        <a href=""><li>Services</li></a>
-                        <a href="../pages/contact.html"><li>Contact Us</li></a>
+                        <li><a href="/#about">About Us</a></li>
+                        <li><a href="/#services">Services</a></li>
+                        <li><a href="./pages/contact.html">Contact Us</a></li>
                     </ul>
+                </div>
+                <button id="navToggle" onclick="toggleSidenav()"><i class="fa-solid fa-bars"></i></button>
+                <div class="sidenav">
+                    <a href="/#about">About Us</a>
+                    <a href="/#services">Services</a>
+                    <a href="./pages/contact.html">Contact Us</a>
                 </div>
                 <div id="search">
                     <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
@@ -26,13 +32,19 @@
         </nav>
         <nav class="hide">
             <div id="navContainerB">
-                <div id="logo"><a href="../index.html">GreenTech Innovations</a></div>
+                <div id="logo"><a href="/index.html">GreenTech Innovations</a></div>
                 <div id="collapse">
                     <ul>
-                        <a href=""><li>About Us</li></a>
-                        <a href=""><li>Services</li></a>
-                        <a href="./pages/contact.html"><li>Contact Us</li></a>
+                        <li><a href="/#about">About Us</a></li>
+                        <li><a href="/#services">Services</a></li>
+                        <li><a href="./pages/contact.html">Contact Us</a></li>
                     </ul>
+                </div>
+                <button id="navToggle" onclick="toggleSidenav()"><i class="fa-solid fa-bars"></i></button>
+                <div class="sidenav">
+                    <a href="./#about">About Us</a>
+                    <a href="./#services">Services</a>
+                    <a href="./pages/contact.html">Contact Us</a>
                 </div>
                 <div id="search">
                     <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
@@ -106,7 +118,7 @@
         <section id="footContent">
             <div class="footInfo">
                 <!-- Content -->
-                <a href="../index.html"><h3 class="footName">GreenTech Innovations</h3></a>
+                <a href="/index.html"><h3 class="footName">GreenTech Innovations</h3></a>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                     Vivamus semper leo sit amet turpis bibendum sodales.
@@ -115,8 +127,8 @@
             
             <div class="footLinks">
                 <!-- Links -->
-                <a href="#"><h4 class="">About Us</h4></a>
-                <a href="#"><h4 class="">Services</h4></a>
+                <a href="/#about"><h4 class="">About Us</h4></a>
+                <a href="/#services"><h4 class="">Services</h4></a>
                 <a href="#"><h4 class="">Contact Us</h4></a>
             </div>
 
