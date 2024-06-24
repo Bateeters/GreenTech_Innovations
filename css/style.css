@@ -92,8 +92,10 @@ nav{
     background-color: whitesmoke;
 }
 
-.sticky>#navContainer{
+.sticky>#navContainer,
+.sticky>#navContainerC{
     padding: 15px 0px;
+    box-shadow: none;
 }
 
 
